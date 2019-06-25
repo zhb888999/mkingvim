@@ -112,7 +112,7 @@ map <leader>dc Idef __call__(self):<Esc>o
 map <leader>dd Idef __del__(self):<Esc>o
 map <leader>dr Idef __repr__(self):<Esc>o
 map <leader>cl Iclass ():<Esc><<f(i
-map <leader>pp Iprint(<Esc>A)<Esc>
+map <leader>pp Iprint(<Esc>lxA)<Esc>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Python快速注释
