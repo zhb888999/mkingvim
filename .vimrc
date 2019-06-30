@@ -32,7 +32,6 @@ set scrolloff=5
 set cursorline
 let mapleader=" "
 
-noremap <leader><CR> :nohlsearch<CR>
 map <leader><leader> <Esc>/<++><CR>:nohlsearch<CR>c4l
 "窗口分屏
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -105,12 +104,20 @@ map <leader>dd Idef __del__(self):<Esc>o
 map <leader>dr Idef __repr__(self):<Esc>o
 map <leader>cl Iclass ():<Esc><<f(i
 map <leader>pp Iprint(<Esc>lxA)<Esc>
+map <leader>pd ^df(<Esc>$x
+map <leader>imu Iimport multiprocessing<Esc>o
+map <leader>ith Iimport threading<Esc>o
+map <leader>iso Iimport socket<Esc>o
+map <leader>iti Iimport time<Esc>o
+map <leader>inu Iimport numpy<Esc>o
+map <leader>ima Iimport matplotlib<Esc>o
+map <leader>isy Iimport sys<Esc>o
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "Python快速注释
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>/ I# <Esc>
-map <leader>\ :s/# //g <Esc>:noh<Esc>
+map <leader>\ :s/# //g <Esc>:nohlsearch<CR>
 "启动插件
 map <leader>1 :NERDTree<CR>
 map <leader>2 :Tlist<CR>
@@ -240,7 +247,8 @@ let g:solarized_visibility="normal"
 " 配色方案
 set background=dark
 set t_Co=256
-colorscheme solarized
+"colorscheme solarized
+colorscheme zellner
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "airline
