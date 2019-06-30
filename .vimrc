@@ -192,6 +192,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 "代码补全
 Plug 'Valloric/YouCompleteMe'
+"Plug 'davidhalter/jedi-vim'
+"Plug 'klen/python-mode'
 " Error checking
 Plug 'w0rp/ale'
 "taglist
@@ -246,9 +248,10 @@ let g:solarized_contrast="normal"
 let g:solarized_visibility="normal"
 " 配色方案
 set background=dark
+"set background=light
 set t_Co=256
-"colorscheme solarized
-colorscheme zellner
+colorscheme solarized
+"colorscheme zellner
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "airline
